@@ -37,9 +37,9 @@ describe('ReminderSnackbar — AC-7 visual rendering', () => {
     const task: Task = {
       id: 'snack-1',
       description: 'Reunião importante',
-      dateTime: '2026-10-10T10:00',
+      date: '2026-10-10',
+      time: '10:00',
       reminded: false,
-      createdAt: '2026-10-10T09:00:00.000Z',
     };
 
     render(
@@ -63,9 +63,9 @@ describe('ReminderSnackbar — AC-7 visual rendering', () => {
     const task: Task = {
       id: 'snack-2',
       description: 'Alarme de integração',
-      dateTime: '2026-10-10T10:00', // same minute → diff ≤ 60 000 ms
+      date: '2026-10-10',
+      time: '10:00', // same minute → diff ≤ 60 000 ms
       reminded: false,
-      createdAt: '2026-10-10T09:00:00.000Z',
     };
     saveTasks([task]);
 
